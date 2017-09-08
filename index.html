@@ -1,52 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Alarm clock</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="build/css/vendor.css">
+  <title>Alarm Clock</title>
 </head>
 
 <body>
-  <div class="jumbotron">
-    <h1>Alarm Clock</h1>
-  </div>
   <div class="container">
-    <h2>Current Time</h2>
-    <h4 id="currentTime"></h4>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <form action="" id="inputTime">
-          <div class="form-group" class="box">
-            <h3>Set Alarm</h3>
-            <label for="time">Enter Alarm Time</label>
-            <input type="time" id="setAlarm" name="time">
-          </div>
-          <button type="submit" name="button" id="ssetAlarm" class="button">Set Alarm</button>
-        </form>
+    <div id="time"></div>
+    <div id="alarm"></div>
+    <div id="setAlarm"></div>
+    <H1>SET AN ALARM</H1>
+    <form id="blank">
+      <div class="form-group">
+        <label for="set">SET AN ALARM</label>
+        <input id='hour' name="00" max="12" class="form-control" placeholder="Hours" type="hour">
+        <input id='min' name="00" max="59" class="form-control" placeholder="Minutes" type="minute">
+        <input id="sec" type="number" name="00" value="" max="59" class="form-control" placeholder="seconds">
+        <select class="form-control" name="ampm" id="meridiem">
+        <option value="am">am</option>
+        <option value="pm">pm</option>
+      </select>
       </div>
-      <div class="col-md-6">
-        <h3>Alarm Set Time</h3>
-        <h4 id="alarmTime"></h4>
-        <button type="submit" id="snooze">Snooze</button>
-        <button type="submit" id="dismiss">Dismiss</button>
-      </div>
+      <button type="submit" name="btn">Set Alarm</button>
+
+    </form>
+    <div id="audio">
+
     </div>
+    <button type="button" name="button" id="stop">STOP</button>
   </div>
-  <div id="output">
-    <audio controls>
-    <source src="assets/audio-files/alarm.mp3" type="audio/mp3">
 
-   </audio>
-
- </div>
-  <link rel="stylesheet" href="build/css/vendor.css">
-  <script src="build/js/vendor.min.js"></script>
-  <script type="text/javascript" src="build/js/app.js"></script>
-
+  <script src="build/js/vendor.min.js" charset="utf-8"></script>
+  <script src="build/js/app.js" charset="utf-8"></script>
 
 </body>
 
