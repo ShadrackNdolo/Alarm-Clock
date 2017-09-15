@@ -24,8 +24,7 @@ There is no sound playing when the alarm set time is reached. This is an error I
 ## Technologies Used
 
 >HTML 5.
->BOOTSTRAP.
->CSS.
+>ANGULAR 2.
 >JQUERY.
 >JAVASCRIPT.
 >--
